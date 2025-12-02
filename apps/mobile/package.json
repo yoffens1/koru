@@ -9,10 +9,12 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@expo/metro-runtime": "^6.1.2",
     "@koru/db": "workspace:*",
     "@koru/feature-flashcards": "workspace:^",
     "@koru/feature-notes": "workspace:*",
     "@koru/ui": "workspace:*",
+    "@nozbe/watermelondb": "^0.28.0",
     "@tamagui/config": "latest",
     "@tamagui/core": "latest",
     "@tamagui/font-inter": "latest",

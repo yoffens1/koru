@@ -8,6 +8,6 @@
     "@koru/db": "workspace:*",
     "tamagui": "latest",
     "@nozbe/watermelondb": "latest",
-    "react": "latest"
+    "react": "19.1.0"
   }
 }
