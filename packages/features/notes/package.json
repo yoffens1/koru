@@ -1,0 +1,13 @@
+{
+  "name": "@koru/feature-notes",
+  "version": "0.0.1",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "dependencies": {
+    "@koru/core": "workspace:*",
+    "@koru/db": "workspace:*",
+    "tamagui": "latest",
+    "@nozbe/watermelondb": "latest",
+    "react": "latest"
+  }
+}
