@@ -113,49 +113,60 @@ koru/
 
 ### Installation
 **Clone the repository**
+```
 git clone https://github.com/yoffens1/koru.git
 cd koru
-
+```
 **Install dependencies**
+```
 pnpm install
-
+```
 **Start development servers (all platforms)**
+```
 pnpm dev
-
+```
 ### Platform-Specific Commands
 
-Mobile only
+#### Mobile only
+```
 cd apps/mobile
 pnpm ios # iOS simulator
 pnpm android # Android emulator
 pnpm web # Web browser
-
-Desktop only
+```
+#### Desktop only
+```
 cd apps/desktop
 pnpm dev # Development mode
 pnpm build # Production build
-
-text
+```
 
 ---
 
 ## 🛠️ Development
 
 ### Running Tests
+```
 pnpm test
+```
 
-text
 
 ### Linting & Formatting
+```
 pnpm lint # ESLint
 pnpm format # Prettier
+```
 
 ### Building for Production
+```
 pnpm build # Build all apps
+```
 
 ### Clean & Reset
 
+```
 pnpm clean # Remove build artifacts
+```
 
 
 ---
