@@ -1,9 +1,0 @@
-{
-  "name": "koru-desktop",
-  "version": "0.0.1",
-  "dependencies": {
-    "@tauri-apps/api": "latest",
-    "react": "latest",
-    "@koru/ui": "workspace:*"
-  }
-}
