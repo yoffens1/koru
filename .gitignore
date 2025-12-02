@@ -36,6 +36,15 @@ src-tauri/gen/
 .DS_Store
 *.pem
 
+# Tauri build artifacts (КРИТИЧНО!)
+apps/desktop/src-tauri/target/
+apps/desktop/src-tauri/gen/
+apps/desktop/src-tauri/WixTools/
+
+# Rust
+**/*.rs.bk
+**/Cargo.lock
+
 # Debug logs
 npm-debug.log*
 yarn-debug.log*
