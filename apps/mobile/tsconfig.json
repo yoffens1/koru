@@ -4,19 +4,31 @@
     "strict": true,
     "baseUrl": ".",
     "paths": {
-      "@koru/shared": ["../../packages/shared/src"],
-      "@koru/shared/*": ["../../packages/shared/src/*"],
-      "@koru/ui": ["../../packages/ui/src"],
-      "@koru/ui/*": ["../../packages/ui/src/*"],
-      "@koru/database": ["../../packages/database/src"],
-      "@koru/database/*": ["../../packages/database/src/*"]
+      "@koru/shared": [
+        "../../packages/shared/src"
+      ],
+      "@koru/shared/*": [
+        "../../packages/shared/src/*"
+      ],
+      "@koru/ui": [
+        "../../packages/ui/src"
+      ],
+      "@koru/ui/*": [
+        "../../packages/ui/src/*"
+      ],
+      "@koru/database": [
+        "../../packages/database/src"
+      ],
+      "@koru/database/*": [
+        "../../packages/database/src/*"
+      ]
     }
   },
   "include": [
     "**/*.ts",
-    "**/*.tsx",
-    ".expo/types/**/*.ts",
-    "expo-env.d.ts"
+    "**/*.tsx"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }
