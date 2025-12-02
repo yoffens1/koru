@@ -81,6 +81,7 @@
 ---
 
 ## 📁 Project Structure
+```
 koru/
 ├── apps/
 │ ├── mobile/ # React Native (Expo) - iOS & Android
@@ -92,6 +93,7 @@ koru/
 ├── turbo.json # Turborepo configuration
 ├── pnpm-workspace.yaml # pnpm workspace config
 └── package.json # Root dependencies
+```
 
 ---
 
