@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "react-native",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@koru/shared": ["./packages/shared/src"],
+      "@koru/shared/*": ["./packages/shared/src/*"],
+      "@koru/ui": ["./packages/ui/src"],
+      "@koru/ui/*": ["./packages/ui/src/*"],
+      "@koru/database": ["./packages/database/src"],
+      "@koru/database/*": ["./packages/database/src/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build",
+    ".turbo",
+    "apps/desktop/src-tauri/target"
+  ]
+}

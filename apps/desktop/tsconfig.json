@@ -1,7 +1,12 @@
 {
-  "extends": "expo/tsconfig.base",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "strict": true,
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    "outDir": "./dist",
+    "rootDir": "./src",
     "baseUrl": ".",
     "paths": {
       "@koru/shared": ["../../packages/shared/src"],
@@ -12,11 +17,6 @@
       "@koru/database/*": ["../../packages/database/src/*"]
     }
   },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    ".expo/types/**/*.ts",
-    "expo-env.d.ts"
-  ],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "src-tauri", "dist"]
 }
