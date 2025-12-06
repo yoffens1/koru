@@ -3,6 +3,7 @@ import { View, Text, TouchableOpacity } from 'react-native';
 import { Icons, colors } from '@koru/ui';
 import { MenuBar } from '../components/MenuBar';
 import { SearchBar } from '../components/SearchBar';
+import { StudyBlock } from '../components/StudyBlock';
 
 export const HomeScreen = () => {
   return (
@@ -21,6 +22,11 @@ export const HomeScreen = () => {
       {/* Search Bar */}
       <View className="px-4 py-2">
         <SearchBar onPress={() => console.log('Search Pressed')} />
+      </View>
+
+      {/* Study Block */}
+      <View className="px-4 py-2">
+        <StudyBlock onStudyPress={() => console.log('Study Pressed')} />
       </View>
 
       {/* Main Content Area */}
