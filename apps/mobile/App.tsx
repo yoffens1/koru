@@ -1,13 +1,16 @@
 import './global.css';
 import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
+import { View, SafeAreaView } from 'react-native';
+import { HomeScreen } from './src/screens/HomeScreen';
 
 export default function App() {
   return (
-    <View className="flex-1 bg-white items-center justify-center">
-      <Text className="text-blue-500 font-bold">Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView className="flex-1 bg-white">
+      <View className="flex-1">
+        <HomeScreen />
+        <StatusBar style="auto" />
+      </View>
+    </SafeAreaView>
   );
 }
 
