@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, TouchableOpacity } from 'react-native';
 import { Icons } from '../../assets';
+import { colors } from '../../theme';
 
 interface MenuBarProps {
   className?: string;
@@ -22,7 +23,7 @@ export const MenuBar: React.FC<MenuBarProps> = ({
         <Icons.FolderAdd 
           width={24} 
           height={24} 
-          color="#C586C0" // accent color
+          color={colors.accent} // accent color
         />
       </TouchableOpacity>
 
@@ -33,7 +34,7 @@ export const MenuBar: React.FC<MenuBarProps> = ({
         <Icons.AddNote 
           width={24} 
           height={24} 
-          color="#C586C0" // accent color
+          color={colors.accent} // accent color
         />
       </TouchableOpacity>
     </View>

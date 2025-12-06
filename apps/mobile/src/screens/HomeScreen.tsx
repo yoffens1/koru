@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
-import { MenuBar, Icons } from '@koru/ui';
+import { MenuBar, Icons, colors } from '@koru/ui';
 
 export const HomeScreen = () => {
   return (
@@ -8,11 +8,11 @@ export const HomeScreen = () => {
       {/* Header */}
       <View className="flex-row items-center justify-between px-4 py-2">
         <View className="flex-row items-center gap-2">
-           <Icons.Logo width={32} height={32} color="#FFFFFF" />
-           <Text className="text-logo text-label-primary">koru</Text>
+           <Icons.Logo width={32} height={32} color={colors.label.primary} />
+           <Text className="font-logo text-logo text-label-primary">koru</Text>
         </View>
         <TouchableOpacity onPress={() => console.log('Settings Pressed')}>
-          <Icons.Settings width={24} height={24} color="#FFFFFF" />
+          <Icons.Settings width={24} height={24} color={colors.label.primary} />
         </TouchableOpacity>
       </View>
 
