@@ -1,6 +1,8 @@
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
-import { MenuBar, Icons, colors } from '@koru/ui';
+import { Icons, colors } from '@koru/ui';
+import { MenuBar } from '../components/MenuBar';
+import { SearchBar } from '../components/SearchBar';
 
 export const HomeScreen = () => {
   return (
@@ -14,6 +16,11 @@ export const HomeScreen = () => {
         <TouchableOpacity onPress={() => console.log('Settings Pressed')}>
           <Icons.Settings width={24} height={24} color={colors.label.primary} />
         </TouchableOpacity>
+      </View>
+
+      {/* Search Bar */}
+      <View className="px-4 py-2">
+        <SearchBar onPress={() => console.log('Search Pressed')} />
       </View>
 
       {/* Main Content Area */}

@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, TouchableOpacity } from 'react-native';
-import { Icons } from '../../assets';
-import { colors } from '../../theme';
+import { Icons, colors } from '@koru/ui';
 
 interface MenuBarProps {
   className?: string;
@@ -15,7 +14,7 @@ export const MenuBar: React.FC<MenuBarProps> = ({
   onNoteAddPress 
 }) => {
   return (
-    <View className={`flex-row items-center justify-between px-6 py-4 bg-bg2-primary border-t border-bg2-stroke ${className}`}>
+    <View className={`flex-row items-center justify-between px-6 py-4 bg-bg2-primary ${className}`}>
       <TouchableOpacity 
         onPress={onFolderAddPress}
         className="p-2 active:opacity-70"
